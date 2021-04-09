@@ -1,4 +1,4 @@
-#include "./recording_preview_renderer.h"
+#include "recording_preview_renderer.h"
 
 #define LOG_TAG "RecordingPreviewRenderer"
 

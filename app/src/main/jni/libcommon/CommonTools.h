@@ -2,10 +2,11 @@
 #define SONG_STUDIO_COMMON
 #include <jni.h>
 #include <android/log.h> 
-#include <stdio.h>
-#include <sys/time.h>
-#include <math.h>
+#include <cstdio>
 #include <stdlib.h>
+#include <sys/time.h>
+#include <cmath>
+#include <cstdio>
 #include <cstring>
 
 #define MAX(a, b)  (((a) > (b)) ? (a) : (b))

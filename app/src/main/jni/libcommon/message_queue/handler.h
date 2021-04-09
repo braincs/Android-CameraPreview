@@ -1,8 +1,8 @@
 #ifndef VIDEO_COMMON_HANDLER_H
 #define VIDEO_COMMON_HANDLER_H
 
-#include "../libcommon/CommonTools.h"
-#include "./message_queue.h"
+#include "CommonTools.h"
+#include "message_queue.h"
 
 class Handler {
 private:

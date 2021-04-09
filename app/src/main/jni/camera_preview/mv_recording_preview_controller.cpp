@@ -1,4 +1,4 @@
-#include "./mv_recording_preview_controller.h"
+#include "mv_recording_preview_controller.h"
 
 #define LOG_TAG "MVRecordingPreviewController"
 
@@ -254,7 +254,7 @@ void MVRecordingPreviewController::configCamera() {
 	}
 	jclass jcls = env->GetObjectClass(obj);
 	if (NULL != jcls) {
-		jmethodID configCameraCallback = env->GetMethodID(jcls, "configCameraFromNative", "(I)Lcom/phuket/tour/camera/preview/CameraConfigInfo;");
+		jmethodID configCameraCallback = env->GetMethodID(jcls, "configCameraFromNative", "(I)Lcom/braincs/eglcamera/preview/CameraConfigInfo;");
 		if (NULL != configCameraCallback) {
 			jobject cameraConfigInfo = env->CallObjectMethod(obj, configCameraCallback, facingId);
 			jclass cls_CameraConfigInfo = env->GetObjectClass(cameraConfigInfo);

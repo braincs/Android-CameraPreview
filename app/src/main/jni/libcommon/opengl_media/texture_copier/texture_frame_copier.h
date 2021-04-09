@@ -1,10 +1,10 @@
 #ifndef TEXTURE_FRAME_COPIER_H
 #define TEXTURE_FRAME_COPIER_H
 
-#include "./../../../libcommon/CommonTools.h"
+#include "CommonTools.h"
 #include <GLES2/gl2.h>
 #include <GLES2/gl2ext.h>
-#include "../texture/texture_frame.h"
+#include "opengl_media/texture/texture_frame.h"
 #include "egl_core/gl_tools.h"
 
 static char* NO_FILTER_VERTEX_SHADER =

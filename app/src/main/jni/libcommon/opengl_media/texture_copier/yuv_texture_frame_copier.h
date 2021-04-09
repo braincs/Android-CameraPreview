@@ -3,9 +3,9 @@
 
 #include <GLES2/gl2.h>
 #include <GLES2/gl2ext.h>
-#include "./../../../libcommon/CommonTools.h"
+#include "CommonTools.h"
 #include "texture_frame_copier.h"
-#include "./../../matrix.h"
+#include "matrix.h"
 
 static char* YUV_FRAME_FRAGMENT_SHADER =
 		"varying highp vec2 yuvTexCoords;\n"

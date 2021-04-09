@@ -1,5 +1,5 @@
-#include "./message_queue.h"
-#include "./handler.h"
+#include "message_queue.h"
+#include "handler.h"
 
 #define LOG_TAG "MessageQueue"
 

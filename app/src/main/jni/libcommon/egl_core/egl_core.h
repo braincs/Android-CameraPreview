@@ -1,11 +1,12 @@
 #ifndef ANDROID_EGL_CORE_H_
 #define ANDROID_EGL_CORE_H_
 
-#include "./../libcommon/CommonTools.h"
+#include "CommonTools.h"
 #include <pthread.h>
 #include <android/native_window.h>
 #include <EGL/egl.h>
 #include <EGL/eglext.h>
+
 #include <KHR/khrplatform.h>
 
 typedef EGLBoolean (EGLAPIENTRYP PFNEGLPRESENTATIONTIMEANDROIDPROC)(EGLDisplay display, EGLSurface surface, khronos_stime_nanoseconds_t time);

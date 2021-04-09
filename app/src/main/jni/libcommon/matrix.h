@@ -3,7 +3,7 @@
 
 #include <math.h>
 #include <stdlib.h>
-#include <string>
+#include <cstring>
 
 void matrixSetIdentityM(float *m);
 void matrixSetRotateM(float *m, float a, float x, float y, float z);

@@ -14,4 +14,5 @@ cmake -B . -GNinja -DCMAKE_TOOLCHAIN_FILE=${ANDROID_NDK_HOME}/build/cmake/androi
 
 ninja -d explain
 
+cd ..
 cp build/libcamerapreview.a ../../jniLibs/arm64-v8a/

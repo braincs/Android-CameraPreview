@@ -1,5 +1,6 @@
-#include "./egl_core.h"
-#include  "./egl_share_context.h"
+#include "egl_core.h"
+#include  "egl_share_context.h"
+
 #define LOG_TAG "EGLCore"
 
 

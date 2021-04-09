@@ -1,4 +1,4 @@
-#include "./handler.h"
+#include "handler.h"
 
 #define LOG_TAG "Handler"
 

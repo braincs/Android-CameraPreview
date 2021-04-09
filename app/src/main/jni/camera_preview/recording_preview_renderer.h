@@ -1,6 +1,7 @@
 #ifndef RECORDING_PREVIEW_RENDERER_H
 #define RECORDING_PREVIEW_RENDERER_H
 
+#include <GLES2/gl2.h>
 #include "opengl_media/render/video_gl_surface_render.h"
 #include "opengl_media/texture/gpu_texture_frame.h"
 #include "opengl_media/texture_copier/gpu_texture_frame_copier.h"

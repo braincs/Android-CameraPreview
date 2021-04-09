@@ -15,6 +15,9 @@ include_directories(${CMAKE_SOURCE_DIR}/egl_core/)
 include_directories(${CMAKE_SOURCE_DIR}/message_queue/)
 include_directories(${CMAKE_SOURCE_DIR}/opengl_media/)
 include_directories(${CMAKE_SOURCE_DIR}/opensl_media/)
+include_directories(${CMAKE_SOURCE_DIR}/opengl_media/texture)
+include_directories(${CMAKE_SOURCE_DIR}/opengl_media/texture_copier)
+include_directories(${CMAKE_SOURCE_DIR}/opengl_media/render)
 
 
 add_library(commontool

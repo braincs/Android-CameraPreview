@@ -41,6 +41,7 @@ android {
 
         pickFirst 'lib/arm64-v8a/libcommontool.a'
         pickFirst 'lib/arm64-v8a/libcamerapreview.a'
+        pickFirst 'lib/arm64-v8a/libsongstudio.so'
         exclude 'lib/armeabi-v7a/**'
 
         doNotStrip "**/*.so"

@@ -2,7 +2,7 @@
 #define SONG_STUDIO_THREAD_H
 
 #include <pthread.h>
-#include "./../libcommon/CommonTools.h"
+#include "CommonTools.h"
 
 class Thread {
 public:
