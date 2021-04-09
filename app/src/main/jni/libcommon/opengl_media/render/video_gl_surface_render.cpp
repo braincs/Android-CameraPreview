@@ -156,8 +156,8 @@ void VideoGLSurfaceRender::renderToViewWithAutoFill(GLuint texID, int screenWidt
 	static const GLfloat _vertices[] = { -1.0f, -1.0f, 1.0f, -1.0f, -1.0f, 1.0f, 1.0f, 1.0f };
 	glVertexAttribPointer(mGLVertexCoords, 2, GL_FLOAT, 0, 0, _vertices);
 	glEnableVertexAttribArray(mGLVertexCoords);
-	GLfloat texCoords[] = { xOffset, 1.0 - yOffset, 1.0 - xOffset, 1.0 - yOffset, xOffset, yOffset,
-			1.0 - xOffset, yOffset };
+	GLfloat texCoords[] = { xOffset, 1.0f - yOffset, 1.0f - xOffset, 1.0f - yOffset, xOffset, yOffset,
+			1.0f - xOffset, yOffset };
 	glVertexAttribPointer(mGLTextureCoords, 2, GL_FLOAT, 0, 0, texCoords);
 	glEnableVertexAttribArray(mGLTextureCoords);
 
@@ -208,8 +208,8 @@ void VideoGLSurfaceRender::renderToAutoFitTexture(GLuint inputTexId, int width, 
 	const GLfloat _vertices[] = { -1.0f, -1.0f, 1.0f, -1.0f, -1.0f, 1.0f, 1.0f, 1.0f };
 	glVertexAttribPointer(mGLVertexCoords, 2, GL_FLOAT, 0, 0, _vertices);
 	glEnableVertexAttribArray(mGLVertexCoords);
-	GLfloat texCoords[] = { xOffset, yOffset, 1.0 - xOffset, yOffset, xOffset, 1.0 - yOffset,
-			1.0 - xOffset, 1.0 - yOffset };
+	GLfloat texCoords[] = { xOffset, yOffset, 1.0f - xOffset, yOffset, xOffset, 1.0f - yOffset,
+			1.0f - xOffset, 1.0f - yOffset };
 	glVertexAttribPointer(mGLTextureCoords, 2, GL_FLOAT, 0, 0, texCoords);
 	glEnableVertexAttribArray(mGLTextureCoords);
 
@@ -235,7 +235,7 @@ void VideoGLSurfaceRender::renderToCroppedTexture(GLuint inputTexId, GLuint outp
 	}
 	float factor = (float)(rectangleLength - squareLength) / (float)rectangleLength;
 	float fromYPosition = factor / 2;
-	float toYPosition = 1.0 - factor / 2;
+	float toYPosition = 1.0f - factor / 2;
 	LOGI("originalWidth is %d originalHeight is %d _backingWidth is %d _backingHeight is %d", originalWidth, originalHeight, _backingWidth, _backingHeight);
 	glViewport(_backingLeft, _backingTop, _backingWidth, _backingHeight);
 
