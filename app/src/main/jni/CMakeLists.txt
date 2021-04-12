@@ -37,11 +37,15 @@ find_library( # Sets the name of the path variable.
               log )
 
 target_link_libraries(songstudio
+        -Wl,--start-group
         android
         log
         z
         EGL
         GLESv2
-        cpreview
+#        cpreview
+#        ccommon
         ccommon
+        cpreview
+        -Wl,--end-group
         )
